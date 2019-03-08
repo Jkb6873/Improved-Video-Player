@@ -2,9 +2,14 @@
   "name": "Better Video Player",
   "version": "1.0",
   "description": "Overwrites the default video player with one that provides more utilities",
-  "background": {
-      "scripts": ["inject.js"],
-      "persistent": false
-    },
+  "content_scripts": [
+     {
+       "matches": [
+            "<all_urls>"
+        ],
+       "css": ["videoPlayer.css"],
+       "js": ["inject.js"]
+     }
+  ],
   "manifest_version": 2
 }
