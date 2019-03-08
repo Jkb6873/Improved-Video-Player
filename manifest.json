@@ -1,0 +1,10 @@
+{
+  "name": "Better Video Player",
+  "version": "1.0",
+  "description": "Overwrites the default video player with one that provides more utilities",
+  "background": {
+      "scripts": ["inject.js"],
+      "persistent": false
+    },
+  "manifest_version": 2
+}
